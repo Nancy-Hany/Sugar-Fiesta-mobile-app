@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="divThreeVM" type="com.nancysapplication.app.modules.divthree.data.viewmodel.DivThreeVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameDivThree"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStyle_4">
+        <ImageView android:id="@+id/imageClose"
+            android:layout_gravity="top|end"
+            android:layout_height="@dimen/_14pxh"
+            android:layout_marginHorizontal="@dimen/_18pxh"
+            android:layout_marginVertical="@dimen/_18pxv"
+            android:layout_width="@dimen/_14pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_close_14x14"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_close_14x14"/>
+    </FrameLayout>
+</layout>
