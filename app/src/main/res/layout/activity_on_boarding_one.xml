@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="onBoardingOneVM" type="com.nancysapplication.app.modules.onboardingone.data.viewmodel.OnBoardingOneVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnadobestock3250"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_366pxv"
+        android:layout_marginTop="@dimen/_224pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <ImageView android:id="@+id/imageAdobeStock3250"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_adobestock3250}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_adobestock3250"/>
+        </ScrollView>
+    </LinearLayout>
+</layout>

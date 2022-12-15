@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="divVM" type="com.nancysapplication.app.modules.div.data.viewmodel.DivVM"/>
+    </data>
+    <View
+        android:background="@drawable/rectangle_gradient_s_orange_100_7c_e_white_a700_7c"
+        android:id="@+id/viewDiv" android:layout_height="match_parent" android:layout_width="match_parent"/>
+</layout>

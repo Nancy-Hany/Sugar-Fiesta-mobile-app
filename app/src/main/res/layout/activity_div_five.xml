@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="divFiveVM" type="com.nancysapplication.app.modules.divfive.data.viewmodel.DivFiveVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameDivFive"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <ImageView android:id="@+id/imageDiv"
+            android:layout_gravity="bottom|start"
+            android:layout_height="@dimen/_269pxh"
+            android:layout_marginEnd="@dimen/_27pxh"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="@dimen/_249pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_20pxh}"
+            imageRes="@{@drawable/img_div_269x249}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_div_269x249"/>
+    </FrameLayout>
+</layout>

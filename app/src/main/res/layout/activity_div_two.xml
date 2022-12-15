@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="divTwoVM" type="com.nancysapplication.app.modules.divtwo.data.viewmodel.DivTwoVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearDivTwo"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <ImageView android:id="@+id/imageDiv"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_269pxh"
+            android:layout_marginEnd="@dimen/_27pxh"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="@dimen/_249pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_20pxh}"
+            imageRes="@{@drawable/img_div_269x249}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_div_269x249"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnlanguage"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_42pxh"
+            android:layout_marginStart="@dimen/_42pxh"
+            android:layout_marginTop="@dimen/_13pxv"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <LinearLayout android:id="@+id/linearRowlanguage"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtLanguage"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.73"
+                    android:layout_width="0dp"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@{divTwoVM.divTwoModel.txtLanguage}"
+                    style="@style/txtInterbold16" tools:text="@string/lbl_zalabya_semsem"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtPrice"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_marginStart="@dimen/_26pxh"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_weight="0.27"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{divTwoVM.divTwoModel.txtPrice}"
+                    style="@style/txtInterextralight12" tools:text="@string/lbl_egp_150"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLanguageOne"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{divTwoVM.divTwoModel.txtLanguageOne}"
+                style="@style/txtInterregular16" tools:text="@string/lbl_230_calories"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

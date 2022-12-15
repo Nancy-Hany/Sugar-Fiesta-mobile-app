@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="imageSliderSlidershapeModel" type="com.nancysapplication.app.modules.home.data.model.ImageSliderSlidershapeModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnshape"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleorange_A100cornerRadius">
+        <View
+            android:background="@drawable/rectangle_bg_lime_800_radius_8"
+            android:id="@+id/viewShape" android:layout_gravity="start"
+            android:layout_height="@dimen/_58pxv"
+            android:layout_marginBottom="@dimen/_33pxv" android:layout_width="@dimen/_377pxh"/>
+    </LinearLayout>
+</layout>

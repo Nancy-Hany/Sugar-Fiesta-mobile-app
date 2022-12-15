@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="divOneVM" type="com.nancysapplication.app.modules.divone.data.viewmodel.DivOneVM"/>
+    </data>
+    <LinearLayout android:gravity="start" android:id="@+id/linearDivOne"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyle_5">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnrectanglefour"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_68pxh"
+            android:layout_marginStart="@dimen/_68pxh"
+            android:layout_marginTop="@dimen/_369pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylecornerRadius_9">
+            <FrameLayout android:id="@+id/frameStackrectanglefour"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_34pxv"
+                android:layout_width="@dimen/_125pxh" style="@style/groupStylecornerRadius_9">
+                <ImageView android:id="@+id/imageRectangleFour"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_34pxh"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_marginStart="@dimen/_1pxh"
+                    android:layout_width="@dimen/_124pxh"
+                    android:scaleType="fitXY"
+                    cornerRadius="@{@dimen/_17pxh}"
+                    imageRes="@{@drawable/img_backgroundrect}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_backgroundrect"/>
+                <FrameLayout android:id="@+id/frameStackrectangle6093"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_34pxv"
+                    android:layout_marginEnd="@dimen/_1pxh"
+                    android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_124pxh">
+                    <ImageView android:id="@+id/imageRectangle6093"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_34pxh"
+                        android:layout_width="@dimen/_124pxh"
+                        android:scaleType="fitXY"
+                        cornerRadius="@{@dimen/_17pxh}"
+                        imageRes="@{@drawable/img_rectangle1}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle1"/>
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtTitle"
+                        android:layout_gravity="top|center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_23pxh"
+                        android:layout_marginStart="@dimen/_23pxh"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{divOneVM.divOneModel.txtTitle}"
+                        style="@style/txtPoppinsregular14_2" tools:text="@string/lbl_add_to_cart2"/>
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/frameStackrectangle6092"
+            android:layout_height="@dimen/_34pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_69pxh"
+            android:layout_marginStart="@dimen/_69pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_width="@dimen/_124pxh" style="@style/groupStylecornerRadius_9">
+            <ImageView android:id="@+id/imageRectangle6092"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_34pxh"
+                android:layout_width="@dimen/_124pxh"
+                android:scaleType="fitXY"
+                cornerRadius="@{@dimen/_17pxh}"
+                imageRes="@{@drawable/img_rectangle1}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle1"/>
+            <TextView android:ellipsize="end"
+                android:gravity="top|start"
+                android:id="@+id/txtTitleOne"
+                android:layout_gravity="top|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{divOneVM.divOneModel.txtTitleOne}"
+                style="@style/txtPoppinsregular14_3" tools:text="@string/lbl_order_now3"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>
